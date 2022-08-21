@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        order_by.default_null_ordering: last
+        format_sql: true
+        globally_quoted_identifiers: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

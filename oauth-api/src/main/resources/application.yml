@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: local
+    include:
+      - datasource
+      - jpa
+      - oauth
+
+logging:
+  level:
+    com:
+      withccm:
+        oauthapi: debug

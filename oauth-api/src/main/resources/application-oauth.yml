@@ -1,0 +1,11 @@
+
+jwt:
+  secret: '0000000000000000000000000000000000001' # jwt secret key 설정
+
+app:
+  auth:
+    tokenSecret: 00000000000000000000000000000001 # refresh token id
+    tokenExpiry: 60 #분 access token 만료시간
+    refreshTokenExpiry: 60 #일 refresh token 만료시간
+    tempTokenExpiry: 30 #초
+    refreshDay: 7 #일 # refresh token 갱신시점
