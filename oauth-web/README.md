@@ -117,6 +117,7 @@ export const login = async (tokenId, type) => {
 
 ### 인증 유틸리티 AuthUtils.js
 토큰 관리를 도와준다.
+예제 코드로 편의상 localStorage에 저장했는데, 실제 운영환경에서는  Secure Cookie와 HTTP Only를 사용하여 저장하기를 바랍니다.
 
 ### API 유틸리티 ApiUtils.js
 API 요청 편하게 할 수 있도록 기본 설정이 되어 있다.
