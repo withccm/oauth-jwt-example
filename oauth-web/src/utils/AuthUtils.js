@@ -15,6 +15,7 @@ const isExpired = () => {
     return false
 }
 
+// 예제 코드로 편의상 localStorage에 저장했는데, 실제 운영환경에서는 Secure Cookie와 HTTP Only를 사용하여 저장하기를 바랍니다.
 const AuthUtils = {
     getToken : () => {
         if (isExpired()) {
